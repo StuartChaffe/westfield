@@ -1,0 +1,38 @@
+/* Westfield Health */
+
+/* IMPORTS */
+
+/* Resets browser-implemented styles */
+@import "_reset.scss";
+
+/* Definings */
+@import "_variables.scss";
+@import "_mixins.scss";
+
+/* Global Styles */
+@import "_global.scss";
+@import "_tables.scss";
+@import "_forms.scss";
+@import "_icons.scss";
+@import "_buttons.scss";
+
+/* Site Sections */
+@import "sections/_homepage.scss";
+@import "sections/_blog.scss";
+@import "sections/_individuals.scss";
+@import "sections/_business.scss";
+@import "sections/_intermediaries.scss";
+@import "sections/_resource_toolkit.scss";
+@import "sections/_products.scss";
+@import "sections/_campaigns.scss";
+@import "sections/_benefits.scss";
+@import "sections/_contact.scss";
+@import "sections/_help.scss";
+@import "sections/_search.scss";
+@import "sections/_iod.scss";
+@import "sections/_sleep-geek.scss";
+@import "sections/_benefits_table.scss";
+
+/* Slider/carousel */
+// @import "../slick/slick.scss";
+// @import "../slick/slick-theme.scss";
