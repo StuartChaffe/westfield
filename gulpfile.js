@@ -20,7 +20,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('browserify', function() {
-      return browserify('./src/scripts/bundle.js')
+      return browserify('./src/js/bundle.js')
       .bundle()
       //Pass desired output filename to vinyl-source-stream
       .pipe(source('main.js'))
@@ -32,7 +32,7 @@ var gulp = require('gulp'),
 
 gulp.task('serve', function() {
   gulp.watch(['./src/styles/**/*.scss'], ['sass']);
-//   gulp.watch(['./assets/js/*.js', './components/**/*.js'], ['browserify']);
+  gulp.watch(['./src/js/*.js'], ['browserify']);
 });
 
-gulp.task('default', ['serve', 'sass']);
+gulp.task('default', ['serve', 'sass', 'browserify']);
