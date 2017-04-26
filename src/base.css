@@ -5046,23 +5046,23 @@ table {
 .benefits-table .sub-header th.is-active, tr td.is-active {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
-.plan-level.plan-level-1.is-active {
+.plan-level.plan-level-one.is-active {
   background: #afbbd4;
   color: white; }
 
-.plan-level.plan-level-2.is-active {
+.plan-level.plan-level-two.is-active {
   background: #9eaccb;
   color: white; }
 
-.plan-level.plan-level-3.is-active {
+.plan-level.plan-level-three.is-active {
   background: #94a4c6;
   color: white; }
 
-.plan-level.plan-level-4.is-active {
+.plan-level.plan-level-four.is-active {
   background: #8a9cc1;
   color: white; }
 
-.plan-level.plan-level-5.is-active {
+.plan-level.plan-level-five.is-active {
   background: #798db8;
   color: white; }
 

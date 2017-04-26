@@ -208,31 +208,31 @@ table {
 }
 
 .plan-level {
-	&.plan-level-1 {
+	&.plan-level-one {
 		&.is-active {
 			background: lighten($grounded-purple, 8%);
 			color: white;
 		}
 	}
-	&.plan-level-2 {
+	&.plan-level-two {
 		&.is-active {
 			background: lighten($grounded-purple, 3%);
 			color: white;
 		}
 	}
-	&.plan-level-3 {
+	&.plan-level-three {
 		&.is-active {
 			background: $grounded-purple;
 			color: white;
 		}
 	}
-	&.plan-level-4 {
+	&.plan-level-four {
 		&.is-active {
 			background: darken($grounded-purple, 3%);
 			color: white;
 		}
 	}
-	&.plan-level-5 {
+	&.plan-level-five {
 		&.is-active {
 			background: darken($grounded-purple, 8%);
 			color: white;
