@@ -2,5 +2,28 @@
     .center {
         text-align: center;
     }
-    
+    .faqs {
+        p.h3 {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 0.5em;
+            &:before {
+                content: 'Q.';
+                position: absolute;
+                left: 0;
+                color: $healthy-orange;
+            }
+        }
+        p {
+            padding-left: 30px;
+            position: relative;
+            &:before {
+                content: 'A.';
+                position: absolute;
+                left: 0;
+                @include co-txt-bold;
+                color: $confident-grey;
+            }
+        }
+    }
 }

@@ -5118,4 +5118,26 @@ table {
 .g4y .center {
   text-align: center; }
 
+.g4y .faqs p.h3 {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 0.5em; }
+  .g4y .faqs p.h3:before {
+    content: 'Q.';
+    position: absolute;
+    left: 0;
+    color: #e94e1b; }
+
+.g4y .faqs p {
+  padding-left: 30px;
+  position: relative; }
+  .g4y .faqs p:before {
+    content: 'A.';
+    position: absolute;
+    left: 0;
+    font-family: "Co Text Bold", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #5d686e; }
+
 /* Slider/carousel */
