@@ -253,8 +253,8 @@ ul {
     padding-left: 0;
     li {
       @extend %tick-li;
-      background-image: url(/staticfiles/svg/tick.png);
-      background-image: url(/staticfiles/svg/tick.svg);
+      background-image: url(../staticfiles/svg/tick.png);
+      background-image: url(../staticfiles/svg/tick.svg);
       background-position: 0 2px;
     }
   }
@@ -269,8 +269,8 @@ ul {
     li {
       @extend %tick-li;
       color: $white;
-      background-image: url(/staticfiles/svg/tick-white.png);
-      background-image: url(/staticfiles/svg/tick-white.svg);
+      background-image: url(../staticfiles/svg/tick-white.png);
+      background-image: url(../staticfiles/svg/tick-white.svg);
       background-position: 0 4px;
       a {
         color: $white;
@@ -1174,6 +1174,7 @@ blockquote {
     padding: 8px 0 8px 10px;
   }
   .global-search {
+    display: none;
     &:hover {
       .sfsearchSubmit {
         @media (max-width: 849px) {

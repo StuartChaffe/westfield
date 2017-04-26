@@ -292,8 +292,8 @@ ul {
   ul.tick, ul.tick-horizontal {
     padding-left: 0; }
     ul.tick li, ul.tick-horizontal li {
-      background-image: url(/staticfiles/svg/tick.png);
-      background-image: url(/staticfiles/svg/tick.svg);
+      background-image: url(../staticfiles/svg/tick.png);
+      background-image: url(../staticfiles/svg/tick.svg);
       background-position: 0 2px; }
   ul.tick-horizontal li {
     margin-right: 40px;
@@ -302,8 +302,8 @@ ul {
     padding-left: 0; }
     ul.tick-white li {
       color: #ffffff;
-      background-image: url(/staticfiles/svg/tick-white.png);
-      background-image: url(/staticfiles/svg/tick-white.svg);
+      background-image: url(../staticfiles/svg/tick-white.png);
+      background-image: url(../staticfiles/svg/tick-white.svg);
       background-position: 0 4px; }
       ul.tick-white li a {
         color: #ffffff;
@@ -1050,21 +1050,23 @@ blockquote {
     @media (max-width: 849px) {
       .mobile-menu-dropdown input.headerSearch {
         padding: 12px 0 12px 10px; } }
-  @media (max-width: 849px) {
-    .mobile-menu-dropdown .global-search:hover .sfsearchSubmit {
-      background-position: center -21px;
-      transition: 0s; } }
-  .mobile-menu-dropdown .global-search .sfsearchSubmit {
-    width: 40px; }
+  .mobile-menu-dropdown .global-search {
+    display: none; }
     @media (max-width: 849px) {
-      .mobile-menu-dropdown .global-search .sfsearchSubmit {
-        width: 50px;
-        background-position: center -21px; } }
-  .mobile-menu-dropdown .global-search .sfsearchTxt {
-    width: calc(100% - 40px); }
-    @media (max-width: 849px) {
-      .mobile-menu-dropdown .global-search .sfsearchTxt {
-        width: calc(100% - 50px); } }
+      .mobile-menu-dropdown .global-search:hover .sfsearchSubmit {
+        background-position: center -21px;
+        transition: 0s; } }
+    .mobile-menu-dropdown .global-search .sfsearchSubmit {
+      width: 40px; }
+      @media (max-width: 849px) {
+        .mobile-menu-dropdown .global-search .sfsearchSubmit {
+          width: 50px;
+          background-position: center -21px; } }
+    .mobile-menu-dropdown .global-search .sfsearchTxt {
+      width: calc(100% - 40px); }
+      @media (max-width: 849px) {
+        .mobile-menu-dropdown .global-search .sfsearchTxt {
+          width: calc(100% - 50px); } }
   .mobile-menu-dropdown .header-items {
     float: none; }
     @media (min-width: 850px) {
@@ -2612,35 +2614,35 @@ label {
 /* Social Media */
 .twitter.white, .twitter.light-grey {
   background-image: url(../img/icons/twitter-grey.png);
-  background-image: url(/staticfiles/svg/icons/twitter-grey.svg); }
+  background-image: url(../staticfiles/svg/icons/twitter-grey.svg); }
 
 .twitter.grey {
   background-image: url(../img/icons/twitter.png);
-  background-image: url(/staticfiles/svg/icons/twitter.svg); }
+  background-image: url(../staticfiles/svg/icons/twitter.svg); }
 
 .linkedin.white, .linkedin.light-grey {
   background-image: url(../img/icons/linkedin-grey.png);
-  background-image: url(/staticfiles/svg/icons/linkedin-grey.svg); }
+  background-image: url(../staticfiles/svg/icons/linkedin-grey.svg); }
 
 .linkedin.grey {
   background-image: url(../img/icons/linkedin.png);
-  background-image: url(/staticfiles/svg/icons/linkedin.svg); }
+  background-image: url(../staticfiles/svg/icons/linkedin.svg); }
 
 .facebook.white, .facebook.light-grey {
   background-image: url(../img/icons/facebook-grey.png);
-  background-image: url(/staticfiles/svg/icons/facebook-grey.svg); }
+  background-image: url(../staticfiles/svg/icons/facebook-grey.svg); }
 
 .facebook.grey {
   background-image: url(../img/icons/facebook.png);
-  background-image: url(/staticfiles/svg/icons/facebook.svg); }
+  background-image: url(../staticfiles/svg/icons/facebook.svg); }
 
 .youtube.white, .youtube.light-grey {
   background-image: url(../img/icons/youtube-grey.png);
-  background-image: url(/staticfiles/svg/icons/youtube-grey.svg); }
+  background-image: url(../staticfiles/svg/icons/youtube-grey.svg); }
 
 .youtube.grey {
   background-image: url(../img/icons/youtube.png);
-  background-image: url(/staticfiles/svg/icons/youtube.svg); }
+  background-image: url(../staticfiles/svg/icons/youtube.svg); }
 
 /* Contact */
 .icon-email {
@@ -5112,5 +5114,8 @@ table {
   border-width: 5px;
   border-style: solid;
   border-color: transparent #e94e1b transparent transparent; }
+
+.g4y .center {
+  text-align: center; }
 
 /* Slider/carousel */
