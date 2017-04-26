@@ -9,4 +9,4 @@ var table = require('./_table');
 // heroSlider();
 // header();
 table();
-console.log('test')
+// console.log('test')

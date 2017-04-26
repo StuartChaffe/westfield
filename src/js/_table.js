@@ -42,10 +42,23 @@ var table = function() {
         }
     });
 
-    $('.buy-bar--close').click(function(){
+    $('.buy-bar--close').click(function(){ 
         $('.buy-bar').removeClass('is-active');
         $('.plan-level').removeClass('is-active');    
     });
+
+
+var topofDiv = $(".benefits-head").offset().top;
+console.log(topofDiv);
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > (topofDiv)){
+       $(".benefits-table-sticky").addClass('is-active');
+    }
+    else{
+       $(".benefits-table-sticky").removeClass('is-active');
+    }
+});
 
 };
 
