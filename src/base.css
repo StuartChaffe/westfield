@@ -5024,7 +5024,8 @@ th, td {
   padding: 15px 0;
   border-top: 1px solid #e94e1b;
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transition: .4s linear all; }
   .buy-bar--inner {
     max-width: 50%;
     margin: 0 auto;
@@ -5065,6 +5066,11 @@ table {
 .plan-level.plan-level-five.is-active {
   background: #798db8;
   color: white; }
+
+.plan-level.is-hover {
+  background-color: #ccc;
+  color: white;
+  transition: .2s linear all; }
 
 /* Tooltip container */
 .tooltip {
@@ -5126,7 +5132,8 @@ table {
   left: 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1060px; }
+  max-width: 1060px;
+  transition: .2s linear all; }
   .benefits-table-head.is-active {
     opacity: 1;
     visibility: visible; }
@@ -5134,7 +5141,12 @@ table {
 .benefits-table-sticky .wrapper-white {
   background-color: transparent;
   border: none;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.benefits-table-sticky .benefits-table {
+  margin-bottom: 0; }
 
 .g4y .center {
   text-align: center; }

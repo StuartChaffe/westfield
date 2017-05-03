@@ -176,6 +176,7 @@ th, td {
 	border-top: 1px solid $healthy-orange;
 	opacity: 0;
 	visibility: hidden;
+	transition: .4s linear all;
 
 	&--inner {
 		max-width: 50%;
@@ -237,6 +238,11 @@ table {
 			background: darken($grounded-purple, 8%);
 			color: white;
 		}
+	}
+	&.is-hover {
+		background-color: #ccc;
+		color: white;
+		transition: .2s linear all;		
 	}
 }
 
@@ -305,10 +311,12 @@ table {
     margin-left: auto;
     margin-right: auto;
     max-width: 1060px;
+	transition: .2s linear all;
 
 	&.is-active {
 		opacity: 1;
 		visibility: visible;
+		
 	}
 }
 
@@ -317,6 +325,11 @@ table {
 		background-color: transparent;
 		border: none;
 		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.benefits-table {
+		margin-bottom: 0;
 	}
 }
 
