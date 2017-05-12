@@ -343,29 +343,177 @@ table {
 
 
 .mobileTable {
-	width: 90%;
-	margin: 0 auto;
+	// width: 90%;
+	margin: 0 10px;
+	border-left: 1px solid $confident-grey;
+	border-right: 1px solid $confident-grey;
+	// border-bottom: 1px solid $confident-grey;
+
+	&-info {
+		width: 100%;
+		display: inline-block;
+		// background: lighten($refreshing-green, 30%);
+	}
+	.sticky-margin {
+		margin-top: 80px;
+	}
+
+	/* Tooltip container */
+	.tooltip {
+		margin-right: 0;
+	}
+
+	/* Tooltip text */
+	.tooltip .tooltiptext {
+		width: 300px;
+	}
+
+	.tooltip .tooltiptext {
+		top: 15px;
+		left: -286px;
+		width: 300px;
+	}
+	.tooltip .tooltiptext::after {
+		content: " ";
+		position: absolute;
+		top: -5px;
+		right: 10px; /* To the left of the tooltip */
+		border-color: transparent transparent $healthy-orange transparent;
+	}
+
+	.mobileTable-section {
+		width: 100%;
+		display: inline-block;
+		border-bottom: 1px solid $confident-grey;
+		border-top: 1px solid $confident-grey;
+		margin-bottom: -7px;
+	}
+	.tableSection-itemHeader {
+		// padding: .2em
+		float: left;
+		width: 20%;
+		height: 100%;
+		border-right: 1px solid $confident-grey;
+		text-align: center;
+		color: white;
+		padding-bottom: 10px;
+		.tableSection-itemPrice {
+			@include co-txt-light;
+		}
+
+		&:nth-child(1) {
+			background: lighten($grounded-purple, 8%);
+		}
+		&:nth-child(2) {
+			background: lighten($grounded-purple, 3%);
+		}
+		&:nth-child(3) {
+			background: $grounded-purple;
+		}
+		&:nth-child(4) {
+			background: darken($grounded-purple, 3%);
+		}
+		&:nth-child(5) {
+			background: darken($grounded-purple, 8%);
+		}
+		.tableSection-itemPeriod {
+			margin: 0;
+			font-size: 70%;
+			clear: both;
+			display: block;
+		}
+		&:last-child {
+			border: none;
+		}
+
+		h2 {
+			color: white;
+			font-size: 100%;
+			margin-bottom: 0;
+		}
+
+		p {
+			margin: 0;
+			font-size: 70%;
+			color: white;
+		}
+	}
+
+	.tableSection-item {
+		// padding: .2em
+		float: left;
+		width: 20%;
+		height: 100%;
+		border-right: 1px solid $confident-grey;
+		text-align: center;
+		background: lighten($refreshing-green, 33%);
+		color: white;
+		padding: 10px 0;
+
+		&:nth-child(1) {
+			background: lighten($grounded-purple, 8%);
+		}
+		&:nth-child(2) {
+			background: lighten($grounded-purple, 3%);
+		}
+		&:nth-child(3) {
+			background: $grounded-purple;
+		}
+		&:nth-child(4) {
+			background: darken($grounded-purple, 3%);
+		}
+		&:nth-child(5) {
+			background: darken($grounded-purple, 8%);
+		}
+		&:last-child {
+			border: none;
+		}
+
+		p {
+			margin: 0;
+			font-size: 70%;
+		}
+	}
+	.tableInfo {
+		padding: 5px 10px;
+		color: $confident-grey;
+		&-title {
+			@include co-txt-bold;
+		}
+		&-icon {
+			display: inline-block;
+		}
+	}
+	.tableSection-itemUpto {
+		color: white;
+	}
+	.tableInfo-attributes {
+		// background: red;
+		float: right;
+		color: $confident-grey;
+		@include co-txt-light;
+		span {
+			margin-left: 10px;
+		}
+	}
+
+	.tableSection-itemTitle {
+		
+	}
+
+	.tableSection-itemPrice {
+		@include co-txt-bold;
+	}
+
+	.tableSection-itemPeriod {
+
+	}
+
+	.mobileTable-sticky {
+		position: fixed;
+		width: 94.5%;
+		z-index: 9;
+	}
+
 }
-
-.mobileTable-section {
-	display: flex;
-}
-
-.tableSection-item {
-	// padding: .2em;
-}
-
-.tableSection-itemTitle {
-
-}
-
-.tableSection-itemPrice {
-
-}
-
-.tableSection-itemPeriod {
-
-}
-
-
 

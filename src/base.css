@@ -5149,13 +5149,125 @@ table {
   margin-bottom: 0; }
 
 .mobileTable {
-  width: 90%;
-  margin: 0 auto; }
-
-.mobileTable-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  margin: 0 10px;
+  border-left: 1px solid #5d686e;
+  border-right: 1px solid #5d686e;
+  /* Tooltip container */
+  /* Tooltip text */ }
+  .mobileTable-info {
+    width: 100%;
+    display: inline-block; }
+  .mobileTable .sticky-margin {
+    margin-top: 80px; }
+  .mobileTable .tooltip {
+    margin-right: 0; }
+  .mobileTable .tooltip .tooltiptext {
+    width: 300px; }
+  .mobileTable .tooltip .tooltiptext {
+    top: 15px;
+    left: -286px;
+    width: 300px; }
+  .mobileTable .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    /* To the left of the tooltip */
+    border-color: transparent transparent #e94e1b transparent; }
+  .mobileTable .mobileTable-section {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #5d686e;
+    border-top: 1px solid #5d686e;
+    margin-bottom: -7px; }
+  .mobileTable .tableSection-itemHeader {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #5d686e;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px; }
+    .mobileTable .tableSection-itemHeader .tableSection-itemPrice {
+      font-family: "Co Text Light", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal; }
+    .mobileTable .tableSection-itemHeader:nth-child(1) {
+      background: #afbbd4; }
+    .mobileTable .tableSection-itemHeader:nth-child(2) {
+      background: #9eaccb; }
+    .mobileTable .tableSection-itemHeader:nth-child(3) {
+      background: #94a4c6; }
+    .mobileTable .tableSection-itemHeader:nth-child(4) {
+      background: #8a9cc1; }
+    .mobileTable .tableSection-itemHeader:nth-child(5) {
+      background: #798db8; }
+    .mobileTable .tableSection-itemHeader .tableSection-itemPeriod {
+      margin: 0;
+      font-size: 70%;
+      clear: both;
+      display: block; }
+    .mobileTable .tableSection-itemHeader:last-child {
+      border: none; }
+    .mobileTable .tableSection-itemHeader h2 {
+      color: white;
+      font-size: 100%;
+      margin-bottom: 0; }
+    .mobileTable .tableSection-itemHeader p {
+      margin: 0;
+      font-size: 70%;
+      color: white; }
+  .mobileTable .tableSection-item {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #5d686e;
+    text-align: center;
+    background: #f5f8f0;
+    color: white;
+    padding: 10px 0; }
+    .mobileTable .tableSection-item:nth-child(1) {
+      background: #afbbd4; }
+    .mobileTable .tableSection-item:nth-child(2) {
+      background: #9eaccb; }
+    .mobileTable .tableSection-item:nth-child(3) {
+      background: #94a4c6; }
+    .mobileTable .tableSection-item:nth-child(4) {
+      background: #8a9cc1; }
+    .mobileTable .tableSection-item:nth-child(5) {
+      background: #798db8; }
+    .mobileTable .tableSection-item:last-child {
+      border: none; }
+    .mobileTable .tableSection-item p {
+      margin: 0;
+      font-size: 70%; }
+  .mobileTable .tableInfo {
+    padding: 5px 10px;
+    color: #5d686e; }
+    .mobileTable .tableInfo-title {
+      font-family: "Co Text Bold", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: normal; }
+    .mobileTable .tableInfo-icon {
+      display: inline-block; }
+  .mobileTable .tableSection-itemUpto {
+    color: white; }
+  .mobileTable .tableInfo-attributes {
+    float: right;
+    color: #5d686e;
+    font-family: "Co Text Light", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+    .mobileTable .tableInfo-attributes span {
+      margin-left: 10px; }
+  .mobileTable .tableSection-itemPrice {
+    font-family: "Co Text Bold", "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal; }
+  .mobileTable .mobileTable-sticky {
+    position: fixed;
+    width: 94.5%;
+    z-index: 9; }
 
 .g4y .center {
   text-align: center; }
