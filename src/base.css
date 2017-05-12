@@ -5148,6 +5148,15 @@ table {
 .benefits-table-sticky .benefits-table {
   margin-bottom: 0; }
 
+.mobileTable {
+  width: 90%;
+  margin: 0 auto; }
+
+.mobileTable-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .g4y .center {
   text-align: center; }
 
