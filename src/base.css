@@ -5225,7 +5225,8 @@ table {
     text-align: center;
     background: #f5f8f0;
     color: white;
-    padding: 10px 0; }
+    padding: 10px 0;
+    cursor: pointer; }
     .mobileTable .tableSection-item:nth-child(1) {
       background: #afbbd4; }
     .mobileTable .tableSection-item:nth-child(2) {
@@ -5266,8 +5267,14 @@ table {
     font-weight: normal; }
   .mobileTable .mobileTable-sticky {
     position: fixed;
-    width: 94.5%;
-    z-index: 9; }
+    width: 100%;
+    z-index: 9;
+    border: none;
+    right: 0;
+    left: 0;
+    padding: 0 10px; }
+    .mobileTable .mobileTable-sticky .tableSection-itemHeader {
+      border-bottom: 1px solid #5d686e; }
 
 .g4y .center {
   text-align: center; }

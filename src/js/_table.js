@@ -1,6 +1,31 @@
 
 var table = function() {
 
+    var mtOne = $('.mt-levelOneLink').attr('href');
+    var mtTwo = $('.mt-levelTwoLink').attr('href');
+    var mtThree = $('.mt-levelThreeLink').attr('href');
+    var mtFour = $('.mt-levelFourLink').attr('href');
+    var mtFive = $('.mt-levelFiveLink').attr('href');
+    console.log(mtThree);
+
+    $('.tableSection-item').click(function(){
+      if ($(this).hasClass('mt-levelOne')) {
+        window.location = mtOne;
+      }
+      if ($(this).hasClass('mt-levelTwo')) {
+        window.location = mtTwo;
+      }
+      if ($(this).hasClass('mt-levelThree')) {
+        window.location = mtThree;
+      }
+      if ($(this).hasClass('mt-levelFour')) {
+        window.location = mtFour;
+      }
+      if ($(this).hasClass('mt-levelFive')) {
+        window.location = mtFive;
+      }
+    });
+
     $(window).on('load', function(){
         var topofDiv = $(".benefits-head").offset().top;
         var bottomofDiv = $(".benefits-head").offset().top + $('.benefits-table-height').outerHeight(true);
@@ -13,7 +38,7 @@ var table = function() {
             $(".benefits-table-sticky").removeClass('is-active');
             }
             if($(window).scrollTop() > (bottomofDiv - 150)){
-                $(".benefits-table-sticky").removeClass('is-active');                
+                $(".benefits-table-sticky").removeClass('is-active');
             }
         });
     });
@@ -43,8 +68,8 @@ var table = function() {
             var link = $('.plan-data.plan-level-one').data("link");
             $('.buy-bar--inner strong').fadeOut(500, function() {
                 $(this).text(title).fadeIn(500);
-            }); 
-            $('.buy-bar--inner a').prop("href", link)     
+            });
+            $('.buy-bar--inner a').prop("href", link)
         }
         if ($(this).hasClass('plan-level-two')) {
             $('.plan-level-two').addClass('is-active');
@@ -53,7 +78,7 @@ var table = function() {
             $('.buy-bar--inner strong').fadeOut(500, function() {
                 $(this).text(title).fadeIn(500);
             });
-            $('.buy-bar--inner a').prop("href", link)                      
+            $('.buy-bar--inner a').prop("href", link)
         }
         if ($(this).hasClass('plan-level-three')) {
             $('.plan-level-three').addClass('is-active');
@@ -65,29 +90,29 @@ var table = function() {
             $('.buy-bar--inner a').prop("href", link)
         }
         if ($(this).hasClass('plan-level-four')) {
-            $('.plan-level-four').addClass('is-active');  
+            $('.plan-level-four').addClass('is-active');
             var title = $('.plan-data.plan-level-four').data("title");
-            var link = $('.plan-data.plan-level-four').data("link");        
+            var link = $('.plan-data.plan-level-four').data("link");
             $('.buy-bar--inner strong').fadeOut(500, function() {
                 $(this).text(title).fadeIn(500);
             });
             $('.buy-bar--inner a').prop("href", link)
-                    
+
         }
         if ($(this).hasClass('plan-level-five')) {
-            $('.plan-level-five').addClass('is-active');    
+            $('.plan-level-five').addClass('is-active');
             var title = $('.plan-data.plan-level-five').data("title");
             var link = $('.plan-data.plan-level-five').data("link");
             $('.buy-bar--inner strong').fadeOut(500, function() {
                 $(this).text(title).fadeIn(500);
             });
-            $('.buy-bar--inner a').prop("href", link)    
+            $('.buy-bar--inner a').prop("href", link)
         }
     });
 
-    $('.buy-bar--close').click(function(){ 
+    $('.buy-bar--close').click(function(){
         $('.buy-bar').removeClass('is-active');
-        $('.plan-level').removeClass('is-active');    
+        $('.plan-level').removeClass('is-active');
     });
 
 };

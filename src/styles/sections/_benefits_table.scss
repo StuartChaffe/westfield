@@ -242,7 +242,7 @@ table {
 	&.is-hover {
 		background-color: #ccc;
 		color: white;
-		transition: .2s linear all;		
+		transition: .2s linear all;
 	}
 }
 
@@ -316,7 +316,7 @@ table {
 	&.is-active {
 		opacity: 1;
 		visibility: visible;
-		
+
 	}
 }
 
@@ -449,6 +449,7 @@ table {
 		background: lighten($refreshing-green, 33%);
 		color: white;
 		padding: 10px 0;
+		cursor: pointer;
 
 		&:nth-child(1) {
 			background: lighten($grounded-purple, 8%);
@@ -498,7 +499,7 @@ table {
 	}
 
 	.tableSection-itemTitle {
-		
+
 	}
 
 	.tableSection-itemPrice {
@@ -511,9 +512,16 @@ table {
 
 	.mobileTable-sticky {
 		position: fixed;
-		width: 94.5%;
-		z-index: 9;
+    width: 100%;
+    z-index: 9;
+    border: none;
+    right: 0;
+    left: 0;
+    padding: 0 10px;
+
+		.tableSection-itemHeader {
+		    border-bottom: 1px solid #5d686e;
+		}
 	}
 
 }
-
